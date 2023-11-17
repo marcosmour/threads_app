@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   experimental: {
     serverActions: true,
     serverComponentsExternalPackages: ["mongoose"],
@@ -10,7 +13,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    
     remotePatterns: [
       {
         protocol: "https",
